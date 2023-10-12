@@ -1,9 +1,12 @@
-import model.car.Car;
+package model.car;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class RentCompany {
+    private static final String NEWLINE = System.getProperty("line.separator");
+
     static RentCompany rentCompany = new RentCompany();
     static List<Car> carList;
 
@@ -17,6 +20,6 @@ public class RentCompany {
     }
 
     public String generateReport() {
-        return "";
+        return carList.stream().map(Car::getReport).collect(Collectors.joining(NEWLINE));
     }
 }

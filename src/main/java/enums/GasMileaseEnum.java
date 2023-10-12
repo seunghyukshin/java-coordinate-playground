@@ -11,6 +11,7 @@ public enum GasMileaseEnum {
     private double value;
 
     GasMileaseEnum(long value) {
+        this.value = value;
     }
 
     public double getValue() {

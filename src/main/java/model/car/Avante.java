@@ -22,6 +22,6 @@ public class Avante extends Car {
 
     @Override
     String getName() {
-        return null;
+        return "Avante";
     }
 }
