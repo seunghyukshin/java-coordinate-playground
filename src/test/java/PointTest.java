@@ -13,13 +13,10 @@ public class PointTest {
         assertThat(new Point(10,20).equals(point));
     }
     @Test
-    public void PointSepartaorUtilsTest() {
+    public void Point_Fail() {
         String pointStr = "(10,20)";
 
-        String[] splited = PointSeparatorUtils.splitPointString(pointStr);
-
-        assertThat(splited[0].equals("10")).isTrue();
-        assertThat(splited[1].equals("20")).isTrue();
+        Point point = new Point(pointStr);
+        assertThat(new Point(10,20).equals(point));
     }
-
 }

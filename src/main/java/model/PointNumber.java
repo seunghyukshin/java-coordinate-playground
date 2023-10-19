@@ -4,11 +4,16 @@ import java.util.Objects;
 
 public class PointNumber {
     int number;
+
     public PointNumber(String numberStr) {
-       this.number = Integer.parseInt(numberStr);
+        this.number = Integer.parseInt(numberStr);
     }
 
     public PointNumber(int number) {
+        // TODO : ValidationUtils?
+        if (number > 24) {
+            throw new IllegalArgumentException("좌표는 최대 24까지 가능합니다.");
+        }
         this.number = number;
     }
 

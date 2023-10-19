@@ -18,6 +18,8 @@ public class PointSeparatorUtils {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(pointStr);
 
+        ValidationUtils.isValidInputPointString(matcher);
+
         String[] strings = new String[2];
         if (matcher.find()) {
             strings = new String[] {matcher.group(1), matcher.group(2)};
