@@ -1,5 +1,6 @@
 package model;
 
+import utils.CalculatorUtils;
 import utils.PointSeparatorUtils;
 
 import java.util.Objects;
@@ -35,5 +36,14 @@ public class Point {
     @Override
     public int hashCode() {
         return Objects.hash(x, y);
+    }
+
+    public double getDistanceFromPoint(Point otherPoint) {
+        return _getDistacneFromPoint(otherPoint.x, otherPoint.y);
+    }
+
+    private double _getDistacneFromPoint(PointNumber x2, PointNumber y2) {
+
+        return CalculatorUtils.getDistanceWithTwoPoint(x2.get);
     }
 }
