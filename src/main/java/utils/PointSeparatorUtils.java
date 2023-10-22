@@ -8,6 +8,7 @@ import java.util.regex.Pattern;
 public class PointSeparatorUtils {
 
     private static final String POINT_REGEX = "[(](.*?),(.*?)[)]";
+    private static final String POINTS_DELIMETER = "-";
 
     /***
      * @desc 포인트문자열에서 포인트문자 추출하여 배열로 반환
@@ -26,5 +27,9 @@ public class PointSeparatorUtils {
             strings = new String[] {matcher.group(1), matcher.group(2)};
         }
         return strings;
+    }
+
+    public static String[] splitPointsString(String pointsString) {
+        return pointsString.split(POINTS_DELIMETER);
     }
 }

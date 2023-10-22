@@ -36,4 +36,9 @@ public class PointNumber {
                 "number=" + number +
                 '}';
     }
+
+    // PointNumber간 차
+    public double subtract(PointNumber pointNumber) {
+        return this.number - pointNumber.number;
+    }
 }

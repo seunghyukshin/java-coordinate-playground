@@ -1,10 +1,11 @@
 package utils;
 
-import model.Point;
 import model.PointNumber;
 
 public class CalculatorUtils {
-    public static double getDistanceWithTwoPoint(int x1, int y1, int x2, int y2) {
-        return Math.sqrt(Math.abs(x1 - x2) + Math.abs(y1 - y2));
+    // 두 점사이간 거리
+    public static double getDistanceWithTwoPoint(PointNumber x1, PointNumber y1, PointNumber x2, PointNumber y2) {
+        // 루트{(x1 - x2)^2 + (y1 - y2)^2}
+        return Math.sqrt(Math.pow((x1.subtract(x2)), 2) + Math.pow((y1.subtract(y2)), 2));
     }
 }

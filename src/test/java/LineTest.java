@@ -9,6 +9,5 @@ public class LineTest {
         Point p2 = new Point(1, 45);
         Line line = new Line(p1, p2);
 
-        line.getDista
     }
 }
