@@ -39,10 +39,10 @@ public class Point {
     }
 
     public double getDistanceFromPoint(Point otherPoint) {
-        return _getDistacneFromPoint(otherPoint.x, otherPoint.y);
+        return _getDistanceFromPoint(otherPoint.x, otherPoint.y);
     }
 
-    private double _getDistacneFromPoint(PointNumber x2, PointNumber y2) {
+    private double _getDistanceFromPoint(PointNumber x2, PointNumber y2) {
         return CalculatorUtils.getDistanceWithTwoPoint(x, y, x2, y2);
     }
 }

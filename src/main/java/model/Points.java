@@ -1,13 +1,30 @@
 package model;
 
 import utils.PointSeparatorUtils;
+import view.ResultView;
 
+import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Stream;
 
 public class Points {
     List<Point> pointList;
+
+    public Points(String pointsString) {
+        String[] splitedPointStrings = PointSeparatorUtils.splitPointsString(pointsString);
+
+        pointList = new ArrayList<>();
+        for (String pointString : splitedPointStrings) {
+            pointList.add(new Point(pointString));
+        }
+    }
+
+    public Points(List<Point> pointList) {
+        this.pointList = pointList;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -22,16 +39,20 @@ public class Points {
         return Objects.hash(pointList);
     }
 
-    public Points(String pointsString) {
-        String[] splitedPointStrings = PointSeparatorUtils.splitPointsString(pointsString);
-
-        pointList = new ArrayList<>();
-        for (String pointString : splitedPointStrings) {
-            pointList.add(new Point(pointString));
+    // point가 한개면 점만
+    // 두개면 길이출력
+    public void printDistance() {
+        if (pointList.size() == 2) {
+            double distance = pointList.get(0).getDistanceFromPoint(pointList.get(1));
+            ResultView.printDistance(distance);
         }
     }
 
-    public Points(List<Point> pointList) {
-        this.pointList = pointList;
+    // Frame에 좌표찍기
+    @Deprecated
+    public void setLocation(JFrame frame) {
+        for (Point point : this.pointList) {
+            frame.setLocation(point.x.number, point.y.number);
+        }
     }
 }

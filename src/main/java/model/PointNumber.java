@@ -1,5 +1,7 @@
 package model;
 
+import strategy.PointStrategy;
+
 import java.util.Objects;
 
 public class PointNumber {
@@ -11,8 +13,9 @@ public class PointNumber {
 
     public PointNumber(int number) {
         // TODO : ValidationUtils?
-        if (number > 24) {
-            throw new IllegalArgumentException("좌표는 최대 24까지 가능합니다.");
+        if (number > PointStrategy.MAX_NUMBER) {
+            String errorMessage = "좌표는 최대" + PointStrategy.MAX_NUMBER + "까지 가능합니다.";
+            throw new IllegalArgumentException(errorMessage);
         }
         this.number = number;
     }
