@@ -1,5 +1,4 @@
-import model.Line;
-import model.Point;
+import model.point.Point;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;

@@ -1,8 +1,7 @@
-import model.Point;
-import model.Points;
+import model.point.Point;
+import model.point.Points;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

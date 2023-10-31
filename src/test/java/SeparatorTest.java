@@ -1,4 +1,3 @@
-import model.Point;
 import org.junit.jupiter.api.Test;
 import utils.PointSeparatorUtils;
 

@@ -1,5 +1,5 @@
-import model.Line;
-import model.Point;
+import model.line.Line;
+import model.point.Point;
 import org.junit.jupiter.api.Test;
 
 public class LineTest {
