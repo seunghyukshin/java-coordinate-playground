@@ -1,15 +1,12 @@
 import model.Coordinate;
-import model.Points;
+import model.creator.FigureCreator;
+import model.creator.SimpleFigureCreator;
+import model.point.Points;
 
 public class Main {
     public static void main(String[] args) {
-
-//        String pointString = InputView.getPointString();
-        String pointString = "(10,20)-(20,24)";
-        Points points = new Points(pointString);
-
-        Coordinate coordinate = new Coordinate(points);
-        coordinate.printPoints();
+        FigureCreator figureCreator = new SimpleFigureCreator();
+        figureCreator.create();
 
     }
 }

@@ -1,9 +1,7 @@
 package view;
 
-import model.Points;
-import strategy.PointStrategy;
+import model.point.Points;
 
-import javax.swing.*;
 import java.awt.*;
 
 public class ResultView {

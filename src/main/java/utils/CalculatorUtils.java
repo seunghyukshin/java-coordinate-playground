@@ -1,6 +1,6 @@
 package utils;
 
-import model.PointNumber;
+import model.point.PointNumber;
 
 public class CalculatorUtils {
     // 두 점사이간 거리

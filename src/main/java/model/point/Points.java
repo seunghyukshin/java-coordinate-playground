@@ -1,14 +1,12 @@
-package model;
+package model.point;
 
 import utils.PointSeparatorUtils;
 import view.ResultView;
 
 import javax.swing.*;
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-import java.util.stream.Stream;
 
 public class Points {
     List<Point> pointList;

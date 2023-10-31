@@ -1,4 +1,4 @@
-package model;
+package model.point;
 
 import utils.CalculatorUtils;
 import utils.PointSeparatorUtils;
