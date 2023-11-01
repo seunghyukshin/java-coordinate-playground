@@ -1,4 +1,4 @@
-import model.line.Line;
+import model.figure.line.Line;
 import model.point.Point;
 import org.junit.jupiter.api.Test;
 

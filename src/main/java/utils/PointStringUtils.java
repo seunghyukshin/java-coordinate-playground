@@ -1,11 +1,9 @@
 package utils;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class PointSeparatorUtils {
+public class PointStringUtils {
 
     private static final String POINT_REGEX = "[(](.*?),(.*?)[)]";
     private static final String POINTS_DELIMETER = "-";

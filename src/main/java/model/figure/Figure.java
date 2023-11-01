@@ -1,14 +1,16 @@
-package model;
+package model.figure;
 
 public interface Figure {
 
     /**
      * 둘레
      */
-    public double getRound();
+    double getRound();
 
     /**
      * 넓이
      */
-    public double getArea();
+    double getArea();
+
+    void print();
 }

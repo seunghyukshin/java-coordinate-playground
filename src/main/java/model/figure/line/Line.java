@@ -1,7 +1,8 @@
-package model.line;
+package model.figure.line;
 
-import model.Figure;
+import model.figure.Figure;
 import model.point.Point;
+import view.ResultView;
 
 public class Line implements Figure {
 
@@ -21,6 +22,11 @@ public class Line implements Figure {
     @Override
     public double getArea() {
         return 0;
+    }
+
+    @Override
+    public void print() {
+        ResultView.printDistance(getLength());
     }
 
     /**

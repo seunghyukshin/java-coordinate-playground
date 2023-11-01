@@ -1,6 +1,6 @@
 package model.point;
 
-import utils.PointSeparatorUtils;
+import utils.PointStringUtils;
 import view.ResultView;
 
 import javax.swing.*;
@@ -12,7 +12,7 @@ public class Points {
     List<Point> pointList;
 
     public Points(String pointsString) {
-        String[] splitedPointStrings = PointSeparatorUtils.splitPointsString(pointsString);
+        String[] splitedPointStrings = PointStringUtils.splitPointsString(pointsString);
 
         pointList = new ArrayList<>();
         for (String pointString : splitedPointStrings) {

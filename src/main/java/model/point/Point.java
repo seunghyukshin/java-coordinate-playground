@@ -1,7 +1,7 @@
 package model.point;
 
 import utils.CalculatorUtils;
-import utils.PointSeparatorUtils;
+import utils.PointStringUtils;
 
 import java.util.Objects;
 
@@ -14,7 +14,7 @@ public class Point {
      */
     public Point(String pointStr) {
         // TODO : ValidtaionUtils로 빼기
-        String[] splited = PointSeparatorUtils.splitPointString(pointStr);
+        String[] splited = PointStringUtils.splitPointString(pointStr);
         this.x = new PointNumber(splited[0]);
         this.y = new PointNumber(splited[1]);
     }
